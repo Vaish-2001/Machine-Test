@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "f515a56a-669d-45f2-8dd3-83fc9c3ae0b7",
+		"name": "Machine Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38964604"
+	},
+	"item": [
+		{
+			"name": "Login with valid credentials",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Username",
+						"value": "siddiqshaikh1@nimapinfotech.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Password",
+						"value": "admin@123",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"siddiqshaikh1@nimapinfotech.com\", \"password\": \"admin@123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "Username",
+							"value": "siddiqshaikh1@nimapinfotech.com",
+							"disabled": true
+						},
+						{
+							"key": "Password",
+							"value": "admin@123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login is sucessfull with valid credentials",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Username",
+								"value": "siddiqshaikh1@nimapinfotech.com",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Password",
+								"value": "admin@123",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"siddiqshaikh1@nimapinfotech.com\", \"password\": \"admin@123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"key": "Username",
+									"value": "siddiqshaikh1@nimapinfotech.com",
+									"disabled": true
+								},
+								{
+									"key": "Password",
+									"value": "admin@123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Nov 2024 06:22:17 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5998"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"userId\": 1,\n    \"userDetail\": {\n        \"Status\": 200,\n        \"Message\": \"Success\",\n        \"data\": {\n            \"UserId\": 1,\n            \"Name\": \"Rahul Jain\",\n            \"MobileNo\": \"1223344556\",\n            \"CountryCode\": \"+91\",\n            \"ContactNo\": \"9819337039\",\n            \"Email\": \"siddiqshaikh1@nimapinfotech.com\",\n            \"Gender\": \"M\",\n            \"Dob\": \"10/23/1987\",\n            \"Country\": \"India\",\n            \"State\": \"Maharashtra\",\n            \"City\": \"Mumbai\",\n            \"StreetAddress\": \"123 Main St\",\n            \"ZipCode\": 12345,\n            \"IsActive\": true,\n            \"CreatedDate\": \"2017-01-20T18:00:26.84\",\n            \"ModifiedDate\": \"2023-10-03T17:58:16.53\",\n            \"UserImage\": \"https://testffc.nimapinfotech.comImages/UserProfileImage/1/1_201702151515193848.jpg\",\n            \"CityId\": 2707,\n            \"StateId\": 22,\n            \"CountryId\": 101,\n            \"AccessWebLogin\": true\n        }\n    },\n    \"companyId\": 1,\n    \"modules\": [\n        {\n            \"Id\": 1,\n            \"Name\": \"Group Module\"\n        },\n        {\n            \"Id\": 4,\n            \"Name\": \"Task Module\"\n        },\n        {\n            \"Id\": 5,\n            \"Name\": \"Moneybook Cloud\"\n        },\n        {\n            \"Id\": 12,\n            \"Name\": \"Public Group\"\n        },\n        {\n            \"Id\": 15,\n            \"Name\": \"DynamicForms\"\n        },\n        {\n            \"Id\": 8,\n            \"Name\": \"CRM\"\n        },\n        {\n            \"Id\": 17,\n            \"Name\": \"Expense Module\"\n        }\n    ],\n    \"roles\": {\n        \"CompanyOwner\": true,\n        \"GroupOwner\": true,\n        \"GroupMember\": true,\n        \"ShopDummy\": true,\n        \"IsStarted\": true,\n        \"FreezeDashboard\": false,\n        \"IsTaskAdmin\": true,\n        \"GCAdmin\": false,\n        \"CRMAdmin\": false,\n        \"ExpenseAdmin\": false,\n        \"Reseller\": false\n    },\n    \"token\": \"\",\n    \"referralToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiQ29tcGFueUlkIjoiMSIsIklzUmVmZXJyYWxVc2VyIjoiRmFsc2UiLCJuYmYiOjE3MzE3MzgxMzcsImV4cCI6MTczNDMzMDEzNywiaWF0IjoxNzMxNzM4MTM3fQ.hFqsv5dixz5OQAZ9t8LlRaSxFP882CSP94m4jrul5bA\",\n    \"timeZone\": \"India Standard Time\",\n    \"CompanyDetail\": {\n        \"GroupId\": 7,\n        \"CompanyId\": 1,\n        \"GroupName\": \"LowerPareal\",\n        \"CompanyName\": \"BMC\",\n        \"Timezone\": \"India Standard Time\",\n        \"CountryName\": \"\",\n        \"CurrencyName\": \"\",\n        \"CurrencySymbol\": \"रु\",\n        \"CurrencyId\": 1,\n        \"CompanyLogo\": \"https://beta.chatongo.in/API/Images/CompanyLogo/1/20200125100226236.jpg\",\n        \"CompanyLogoModifiedDate\": \"01-25-2020 04:32:26 AM\",\n        \"TrialStartDate\": \"03-15-2019 05:30:00 AM\",\n        \"TrialEndDate\": \"12-31-2020 05:30:00 AM\",\n        \"SubscriptionStatus\": \"Live\",\n        \"DaysRemainig\": -1416,\n        \"FinancialDate\": \"04/01/2024 12:00:00 AM\"\n    },\n    \"Permissions\": [\n        {\n            \"Id\": 1,\n            \"SystemName\": \"CustomersView\"\n        },\n        {\n            \"Id\": 2,\n            \"SystemName\": \"CustomersAdd\"\n        },\n        {\n            \"Id\": 3,\n            \"SystemName\": \"CustomersEdit\"\n        },\n        {\n            \"Id\": 4,\n            \"SystemName\": \"CustomersDelete\"\n        },\n        {\n            \"Id\": 5,\n            \"SystemName\": \"CustomersBulkImport\"\n        },\n        {\n            \"Id\": 6,\n            \"SystemName\": \"CustomersBulkExport\"\n        },\n        {\n            \"Id\": 7,\n            \"SystemName\": \"DealsView\"\n        },\n        {\n            \"Id\": 8,\n            \"SystemName\": \"DealsAdd\"\n        },\n        {\n            \"Id\": 9,\n            \"SystemName\": \"DealsEdit\"\n        },\n        {\n            \"Id\": 10,\n            \"SystemName\": \"DealsDelete\"\n        },\n        {\n            \"Id\": 11,\n            \"SystemName\": \"TaskView\"\n        },\n        {\n            \"Id\": 12,\n            \"SystemName\": \"TaskAdd\"\n        },\n        {\n            \"Id\": 13,\n            \"SystemName\": \"TaskEdit\"\n        },\n        {\n            \"Id\": 14,\n            \"SystemName\": \"TaskDelete\"\n        },\n        {\n            \"Id\": 15,\n            \"SystemName\": \"PunchIn_PunchOut\"\n        },\n        {\n            \"Id\": 16,\n            \"SystemName\": \"ExpenseView\"\n        },\n        {\n            \"Id\": 17,\n            \"SystemName\": \"ExpenseAdd\"\n        },\n        {\n            \"Id\": 18,\n            \"SystemName\": \"ExpenseEdit\"\n        },\n        {\n            \"Id\": 19,\n            \"SystemName\": \"ExepenseDelete\"\n        },\n        {\n            \"Id\": 20,\n            \"SystemName\": \"OrdersView\"\n        },\n        {\n            \"Id\": 21,\n            \"SystemName\": \"OrdersAdd\"\n        },\n        {\n            \"Id\": 22,\n            \"SystemName\": \"OrdersEdit\"\n        },\n        {\n            \"Id\": 23,\n            \"SystemName\": \"OrdersDelete\"\n        },\n        {\n            \"Id\": 24,\n            \"SystemName\": \"CustomerReportView\"\n        },\n        {\n            \"Id\": 25,\n            \"SystemName\": \"CustomerReportExport\"\n        },\n        {\n            \"Id\": 26,\n            \"SystemName\": \"ExpenseReportView\"\n        },\n        {\n            \"Id\": 27,\n            \"SystemName\": \"ExpenseReportExport\"\n        },\n        {\n            \"Id\": 28,\n            \"SystemName\": \"AttendanceReportExport\"\n        },\n        {\n            \"Id\": 29,\n            \"SystemName\": \"SalesReportView\"\n        },\n        {\n            \"Id\": 30,\n            \"SystemName\": \"SalesReportExport\"\n        },\n        {\n            \"Id\": 31,\n            \"SystemName\": \"DealsReportView\"\n        },\n        {\n            \"Id\": 32,\n            \"SystemName\": \"DealsReportExport\"\n        },\n        {\n            \"Id\": 33,\n            \"SystemName\": \"Billing\"\n        },\n        {\n            \"Id\": 34,\n            \"SystemName\": \"Integration\"\n        },\n        {\n            \"Id\": 35,\n            \"SystemName\": \"ManageUsers\"\n        },\n        {\n            \"Id\": 36,\n            \"SystemName\": \"ManageRoles\"\n        },\n        {\n            \"Id\": 37,\n            \"SystemName\": \"AllUsersData\"\n        },\n        {\n            \"Id\": 38,\n            \"SystemName\": \"CatalogueView\"\n        },\n        {\n            \"Id\": 39,\n            \"SystemName\": \"CatalogueAdd\"\n        },\n        {\n            \"Id\": 40,\n            \"SystemName\": \"CatalogueEdit\"\n        },\n        {\n            \"Id\": 41,\n            \"SystemName\": \"CatalogueDelete\"\n        },\n        {\n            \"Id\": 42,\n            \"SystemName\": \"CompanySettingsEdit\"\n        },\n        {\n            \"Id\": 43,\n            \"SystemName\": \"ExpenseSettings\"\n        },\n        {\n            \"Id\": 44,\n            \"SystemName\": \"CRMSettings\"\n        },\n        {\n            \"Id\": 45,\n            \"SystemName\": \"TerritoryMaster\"\n        },\n        {\n            \"Id\": 46,\n            \"SystemName\": \"AttendanceSettings\"\n        },\n        {\n            \"Id\": 47,\n            \"SystemName\": \"DynamicFormView\"\n        },\n        {\n            \"Id\": 48,\n            \"SystemName\": \"DynamicFormAdd\"\n        },\n        {\n            \"Id\": 49,\n            \"SystemName\": \"OrderManagement\"\n        },\n        {\n            \"Id\": 50,\n            \"SystemName\": \"CustomFieldManagement\"\n        },\n        {\n            \"Id\": 51,\n            \"SystemName\": \"VisitFormView\"\n        },\n        {\n            \"Id\": 52,\n            \"SystemName\": \"VisitFormAdd\"\n        },\n        {\n            \"Id\": 53,\n            \"SystemName\": \"VisitFormDelete\"\n        },\n        {\n            \"Id\": 54,\n            \"SystemName\": \"DynamicFormDelete\"\n        },\n        {\n            \"Id\": 55,\n            \"SystemName\": \"LeaveAdd\"\n        },\n        {\n            \"Id\": 56,\n            \"SystemName\": \"LeaveApprove\"\n        },\n        {\n            \"Id\": 57,\n            \"SystemName\": \"Communication\"\n        },\n        {\n            \"Id\": 58,\n            \"SystemName\": \"TaskSetting\"\n        },\n        {\n            \"Id\": 59,\n            \"SystemName\": \"Top5Absentees\"\n        },\n        {\n            \"Id\": 60,\n            \"SystemName\": \"Top5HalfDays\"\n        },\n        {\n            \"Id\": 61,\n            \"SystemName\": \"Top5ExtraDays\"\n        },\n        {\n            \"Id\": 62,\n            \"SystemName\": \"Top5PlannedLeaves\"\n        },\n        {\n            \"Id\": 63,\n            \"SystemName\": \"Top5ClaimUpdate\"\n        },\n        {\n            \"Id\": 64,\n            \"SystemName\": \"EmployeeLocation\"\n        },\n        {\n            \"Id\": 65,\n            \"SystemName\": \"Customer\"\n        },\n        {\n            \"Id\": 66,\n            \"SystemName\": \"Top5CustomerOrder\"\n        },\n        {\n            \"Id\": 67,\n            \"SystemName\": \"DealsAndPipeline\"\n        },\n        {\n            \"Id\": 68,\n            \"SystemName\": \"Expense\"\n        },\n        {\n            \"Id\": 69,\n            \"SystemName\": \"Top5Expense\"\n        },\n        {\n            \"Id\": 70,\n            \"SystemName\": \"SalesOverView\"\n        },\n        {\n            \"Id\": 71,\n            \"SystemName\": \"FeedLrm\"\n        },\n        {\n            \"Id\": 72,\n            \"SystemName\": \"Calls\"\n        },\n        {\n            \"Id\": 73,\n            \"SystemName\": \"Meetings\"\n        },\n        {\n            \"Id\": 74,\n            \"SystemName\": \"LeadSource\"\n        },\n        {\n            \"Id\": 75,\n            \"SystemName\": \"LeadStage\"\n        },\n        {\n            \"Id\": 76,\n            \"SystemName\": \"LeadStatus\"\n        },\n        {\n            \"Id\": 80,\n            \"SystemName\": \"LostReason\"\n        },\n        {\n            \"Id\": 82,\n            \"SystemName\": \"DealsandPipelineSettings\"\n        },\n        {\n            \"Id\": 83,\n            \"SystemName\": \"OpportunityAgainstLeadSource\"\n        },\n        {\n            \"Id\": 84,\n            \"SystemName\": \"LeadsOnAccountStageAgainstLeadSource\"\n        },\n        {\n            \"Id\": 88,\n            \"SystemName\": \"AttendanceRegularization\"\n        },\n        {\n            \"Id\": 89,\n            \"SystemName\": \"LeaveExport\"\n        },\n        {\n            \"Id\": 90,\n            \"SystemName\": \"LeaveSetting\"\n        },\n        {\n            \"Id\": 91,\n            \"SystemName\": \"LeadsConversion\"\n        },\n        {\n            \"Id\": 92,\n            \"SystemName\": \"OrderStatusEdit\"\n        },\n        {\n            \"Id\": 95,\n            \"SystemName\": \"OrderSettings\"\n        },\n        {\n            \"Id\": 96,\n            \"SystemName\": \"OpportunityConversion\"\n        },\n        {\n            \"Id\": 98,\n            \"SystemName\": \"AddBusiness\"\n        },\n        {\n            \"Id\": 107,\n            \"SystemName\": \"ManageOrganizationalUnits\"\n        },\n        {\n            \"Id\": 108,\n            \"SystemName\": \"CustomersBulkAssign\"\n        },\n        {\n            \"Id\": 110,\n            \"SystemName\": \"ProjectView\"\n        },\n        {\n            \"Id\": 85,\n            \"SystemName\": \"TagsByOpportunity\"\n        },\n        {\n            \"Id\": 86,\n            \"SystemName\": \"TagsByWonOpportunity\"\n        },\n        {\n            \"Id\": 87,\n            \"SystemName\": \"TagsByLostOpportunity\"\n        },\n        {\n            \"Id\": 94,\n            \"SystemName\": \"ProductOrderStatus\"\n        },\n        {\n            \"Id\": 99,\n            \"SystemName\": \"ViewBusiness\"\n        },\n        {\n            \"Id\": 100,\n            \"SystemName\": \"EditBusiness\"\n        },\n        {\n            \"Id\": 101,\n            \"SystemName\": \"DeleteBusiness\"\n        },\n        {\n            \"Id\": 102,\n            \"SystemName\": \"ReferralAdd\"\n        },\n        {\n            \"Id\": 103,\n            \"SystemName\": \"ReferralView\"\n        },\n        {\n            \"Id\": 104,\n            \"SystemName\": \"ReferralApprove\"\n        },\n        {\n            \"Id\": 105,\n            \"SystemName\": \"ReferralEdit\"\n        },\n        {\n            \"Id\": 106,\n            \"SystemName\": \"ReferralDelete\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Login with invalid Credentials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"siddiqshaikh1@nimapinfotech.com\", \"password\": \"admin123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}"
+			},
+			"response": [
+				{
+					"name": "Defect 1- {With invalid username and password the login is still sucessfull}",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"siddiqshaikh1@nimapinfotech.com\", \"password\": \"admin123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Nov 2024 06:23:09 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5335"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"userId\": 1223,\n    \"userDetail\": {\n        \"Status\": 200,\n        \"Message\": \"Success\",\n        \"data\": {\n            \"UserId\": 1223,\n            \"Name\": \"Siddiq\",\n            \"MobileNo\": \"9465879040\",\n            \"CountryCode\": \"+91\",\n            \"ContactNo\": \"-\",\n            \"Email\": \"siddiqshaikh1@nimapinfotech.com\",\n            \"Gender\": \"-\",\n            \"Dob\": \"01/01/1900\",\n            \"Country\": \"India\",\n            \"State\": \"Maharashtra\",\n            \"City\": \"Mumbai\",\n            \"StreetAddress\": \"123 Main St\",\n            \"ZipCode\": 12345,\n            \"IsActive\": true,\n            \"CreatedDate\": \"2023-02-22T11:01:22.733\",\n            \"ModifiedDate\": \"2023-02-22T11:01:22.733\",\n            \"UserImage\": \"NA\",\n            \"CityId\": 2707,\n            \"StateId\": 22,\n            \"CountryId\": 101,\n            \"AccessWebLogin\": true\n        }\n    },\n    \"companyId\": 1118,\n    \"modules\": [\n        {\n            \"Id\": 1,\n            \"Name\": \"Group Module\"\n        },\n        {\n            \"Id\": 4,\n            \"Name\": \"Task Module\"\n        },\n        {\n            \"Id\": 8,\n            \"Name\": \"CRM\"\n        },\n        {\n            \"Id\": 11,\n            \"Name\": \"GeoCalender\"\n        },\n        {\n            \"Id\": 12,\n            \"Name\": \"Public Group\"\n        },\n        {\n            \"Id\": 15,\n            \"Name\": \"DynamicForms\"\n        },\n        {\n            \"Id\": 17,\n            \"Name\": \"Expense Module\"\n        }\n    ],\n    \"roles\": {\n        \"CompanyOwner\": true,\n        \"GroupOwner\": true,\n        \"GroupMember\": true,\n        \"ShopDummy\": true,\n        \"IsStarted\": true,\n        \"FreezeDashboard\": false,\n        \"IsTaskAdmin\": true,\n        \"GCAdmin\": true,\n        \"CRMAdmin\": true,\n        \"ExpenseAdmin\": false,\n        \"Reseller\": false\n    },\n    \"token\": \"\",\n    \"referralToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIxIiwiQ29tcGFueUlkIjoiMSIsIklzUmVmZXJyYWxVc2VyIjoiRmFsc2UiLCJuYmYiOjE3MzE3MzgxODksImV4cCI6MTczNDMzMDE4OSwiaWF0IjoxNzMxNzM4MTg5fQ.BmBboDmhTfeYdGYYAqK-CEEayKTZE04jr5eBTO6vxJo\",\n    \"timeZone\": \"India Standard Time\",\n    \"CompanyDetail\": {\n        \"GroupId\": 403,\n        \"CompanyId\": 1118,\n        \"GroupName\": \"Default\",\n        \"CompanyName\": \"Siddiq \",\n        \"Timezone\": \"\",\n        \"CountryName\": \"\",\n        \"CurrencyName\": \"\",\n        \"CurrencySymbol\": \"रु\",\n        \"CurrencyId\": 1,\n        \"CompanyLogo\": \"\",\n        \"CompanyLogoModifiedDate\": \"\",\n        \"TrialStartDate\": \"02-22-2023 04:31:23 PM\",\n        \"TrialEndDate\": \"11-18-2025 04:31:23 PM\",\n        \"SubscriptionStatus\": \"Live\",\n        \"DaysRemainig\": 367,\n        \"FinancialDate\": \"04/01/2024 12:00:00 AM\"\n    },\n    \"Permissions\": [\n        {\n            \"Id\": 1,\n            \"SystemName\": \"CustomersView\"\n        },\n        {\n            \"Id\": 2,\n            \"SystemName\": \"CustomersAdd\"\n        },\n        {\n            \"Id\": 3,\n            \"SystemName\": \"CustomersEdit\"\n        },\n        {\n            \"Id\": 4,\n            \"SystemName\": \"CustomersDelete\"\n        },\n        {\n            \"Id\": 5,\n            \"SystemName\": \"CustomersBulkImport\"\n        },\n        {\n            \"Id\": 6,\n            \"SystemName\": \"CustomersBulkExport\"\n        },\n        {\n            \"Id\": 7,\n            \"SystemName\": \"DealsView\"\n        },\n        {\n            \"Id\": 8,\n            \"SystemName\": \"DealsAdd\"\n        },\n        {\n            \"Id\": 9,\n            \"SystemName\": \"DealsEdit\"\n        },\n        {\n            \"Id\": 10,\n            \"SystemName\": \"DealsDelete\"\n        },\n        {\n            \"Id\": 11,\n            \"SystemName\": \"TaskView\"\n        },\n        {\n            \"Id\": 12,\n            \"SystemName\": \"TaskAdd\"\n        },\n        {\n            \"Id\": 13,\n            \"SystemName\": \"TaskEdit\"\n        },\n        {\n            \"Id\": 14,\n            \"SystemName\": \"TaskDelete\"\n        },\n        {\n            \"Id\": 15,\n            \"SystemName\": \"PunchIn_PunchOut\"\n        },\n        {\n            \"Id\": 16,\n            \"SystemName\": \"ExpenseView\"\n        },\n        {\n            \"Id\": 17,\n            \"SystemName\": \"ExpenseAdd\"\n        },\n        {\n            \"Id\": 18,\n            \"SystemName\": \"ExpenseEdit\"\n        },\n        {\n            \"Id\": 19,\n            \"SystemName\": \"ExepenseDelete\"\n        },\n        {\n            \"Id\": 20,\n            \"SystemName\": \"OrdersView\"\n        },\n        {\n            \"Id\": 21,\n            \"SystemName\": \"OrdersAdd\"\n        },\n        {\n            \"Id\": 22,\n            \"SystemName\": \"OrdersEdit\"\n        },\n        {\n            \"Id\": 23,\n            \"SystemName\": \"OrdersDelete\"\n        },\n        {\n            \"Id\": 24,\n            \"SystemName\": \"CustomerReportView\"\n        },\n        {\n            \"Id\": 25,\n            \"SystemName\": \"CustomerReportExport\"\n        },\n        {\n            \"Id\": 26,\n            \"SystemName\": \"ExpenseReportView\"\n        },\n        {\n            \"Id\": 27,\n            \"SystemName\": \"ExpenseReportExport\"\n        },\n        {\n            \"Id\": 28,\n            \"SystemName\": \"AttendanceReportExport\"\n        },\n        {\n            \"Id\": 29,\n            \"SystemName\": \"SalesReportView\"\n        },\n        {\n            \"Id\": 30,\n            \"SystemName\": \"SalesReportExport\"\n        },\n        {\n            \"Id\": 31,\n            \"SystemName\": \"DealsReportView\"\n        },\n        {\n            \"Id\": 32,\n            \"SystemName\": \"DealsReportExport\"\n        },\n        {\n            \"Id\": 33,\n            \"SystemName\": \"Billing\"\n        },\n        {\n            \"Id\": 34,\n            \"SystemName\": \"Integration\"\n        },\n        {\n            \"Id\": 35,\n            \"SystemName\": \"ManageUsers\"\n        },\n        {\n            \"Id\": 36,\n            \"SystemName\": \"ManageRoles\"\n        },\n        {\n            \"Id\": 37,\n            \"SystemName\": \"AllUsersData\"\n        },\n        {\n            \"Id\": 38,\n            \"SystemName\": \"CatalogueView\"\n        },\n        {\n            \"Id\": 39,\n            \"SystemName\": \"CatalogueAdd\"\n        },\n        {\n            \"Id\": 40,\n            \"SystemName\": \"CatalogueEdit\"\n        },\n        {\n            \"Id\": 41,\n            \"SystemName\": \"CatalogueDelete\"\n        },\n        {\n            \"Id\": 42,\n            \"SystemName\": \"CompanySettingsEdit\"\n        },\n        {\n            \"Id\": 43,\n            \"SystemName\": \"ExpenseSettings\"\n        },\n        {\n            \"Id\": 44,\n            \"SystemName\": \"CRMSettings\"\n        },\n        {\n            \"Id\": 45,\n            \"SystemName\": \"TerritoryMaster\"\n        },\n        {\n            \"Id\": 46,\n            \"SystemName\": \"AttendanceSettings\"\n        },\n        {\n            \"Id\": 47,\n            \"SystemName\": \"DynamicFormView\"\n        },\n        {\n            \"Id\": 48,\n            \"SystemName\": \"DynamicFormAdd\"\n        },\n        {\n            \"Id\": 49,\n            \"SystemName\": \"OrderManagement\"\n        },\n        {\n            \"Id\": 50,\n            \"SystemName\": \"CustomFieldManagement\"\n        },\n        {\n            \"Id\": 51,\n            \"SystemName\": \"VisitFormView\"\n        },\n        {\n            \"Id\": 52,\n            \"SystemName\": \"VisitFormAdd\"\n        },\n        {\n            \"Id\": 53,\n            \"SystemName\": \"VisitFormDelete\"\n        },\n        {\n            \"Id\": 54,\n            \"SystemName\": \"DynamicFormDelete\"\n        },\n        {\n            \"Id\": 55,\n            \"SystemName\": \"LeaveAdd\"\n        },\n        {\n            \"Id\": 56,\n            \"SystemName\": \"LeaveApprove\"\n        },\n        {\n            \"Id\": 57,\n            \"SystemName\": \"Communication\"\n        },\n        {\n            \"Id\": 58,\n            \"SystemName\": \"TaskSetting\"\n        },\n        {\n            \"Id\": 59,\n            \"SystemName\": \"Top5Absentees\"\n        },\n        {\n            \"Id\": 60,\n            \"SystemName\": \"Top5HalfDays\"\n        },\n        {\n            \"Id\": 61,\n            \"SystemName\": \"Top5ExtraDays\"\n        },\n        {\n            \"Id\": 62,\n            \"SystemName\": \"Top5PlannedLeaves\"\n        },\n        {\n            \"Id\": 63,\n            \"SystemName\": \"Top5ClaimUpdate\"\n        },\n        {\n            \"Id\": 64,\n            \"SystemName\": \"EmployeeLocation\"\n        },\n        {\n            \"Id\": 65,\n            \"SystemName\": \"Customer\"\n        },\n        {\n            \"Id\": 66,\n            \"SystemName\": \"Top5CustomerOrder\"\n        },\n        {\n            \"Id\": 67,\n            \"SystemName\": \"DealsAndPipeline\"\n        },\n        {\n            \"Id\": 68,\n            \"SystemName\": \"Expense\"\n        },\n        {\n            \"Id\": 69,\n            \"SystemName\": \"Top5Expense\"\n        },\n        {\n            \"Id\": 70,\n            \"SystemName\": \"SalesOverView\"\n        },\n        {\n            \"Id\": 71,\n            \"SystemName\": \"FeedLrm\"\n        },\n        {\n            \"Id\": 72,\n            \"SystemName\": \"Calls\"\n        },\n        {\n            \"Id\": 73,\n            \"SystemName\": \"Meetings\"\n        },\n        {\n            \"Id\": 74,\n            \"SystemName\": \"LeadSource\"\n        },\n        {\n            \"Id\": 75,\n            \"SystemName\": \"LeadStage\"\n        },\n        {\n            \"Id\": 76,\n            \"SystemName\": \"LeadStatus\"\n        },\n        {\n            \"Id\": 77,\n            \"SystemName\": \"TaskOverview\"\n        },\n        {\n            \"Id\": 78,\n            \"SystemName\": \"TeamWiseTask\"\n        },\n        {\n            \"Id\": 79,\n            \"SystemName\": \"ListView\"\n        },\n        {\n            \"Id\": 80,\n            \"SystemName\": \"LostReason\"\n        },\n        {\n            \"Id\": 82,\n            \"SystemName\": \"DealsandPipelineSettings\"\n        },\n        {\n            \"Id\": 83,\n            \"SystemName\": \"OpportunityAgainstLeadSource\"\n        },\n        {\n            \"Id\": 84,\n            \"SystemName\": \"LeadsOnAccountStageAgainstLeadSource\"\n        },\n        {\n            \"Id\": 88,\n            \"SystemName\": \"AttendanceRegularization\"\n        },\n        {\n            \"Id\": 89,\n            \"SystemName\": \"LeaveExport\"\n        },\n        {\n            \"Id\": 90,\n            \"SystemName\": \"LeaveSetting\"\n        },\n        {\n            \"Id\": 91,\n            \"SystemName\": \"LeadsConversion\"\n        },\n        {\n            \"Id\": 92,\n            \"SystemName\": \"OrderStatusEdit\"\n        },\n        {\n            \"Id\": 85,\n            \"SystemName\": \"TagsByOpportunity\"\n        },\n        {\n            \"Id\": 86,\n            \"SystemName\": \"TagsByWonOpportunity\"\n        },\n        {\n            \"Id\": 87,\n            \"SystemName\": \"TagsByLostOpportunity\"\n        },\n        {\n            \"Id\": 94,\n            \"SystemName\": \"ProductOrderStatus\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Add a customer from dashboard page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{token}}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\"LeadId\":0,\"LeadName\":\"Mahesh\",\"RefNo\":\"\",\"ReferredBy\":0,\"PersonName\":\"\",\"MobileNo\":\"\",\"ContactNo\":\"\",\"Email\":\"\",\"PersonDesignation\":\"\",\"Address\":\"\",\"CountryId\":0,\"StateId\":0,\"CityId\":0,\"LocalityId\":0,\"PinCode\":\"\",\"LeadSourceId\":0,\"LeadStageId\":0,\"TerritoryId\":0,\"Website\":\"\",\"OtherInfo\":\"\",\"LeadTypeId\":0,\"ParentLeadId\":0,\"IsVisibleToAll\":false,\"LeadContacts\":[],\"CustomFieldValues\":[],\"FrontView\":\"\",\"BackView\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{AdduserBaseUrl}}"
+			},
+			"response": []
+		}
+	]
+}
